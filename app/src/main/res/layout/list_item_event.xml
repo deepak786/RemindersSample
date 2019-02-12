@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="obj" type="com.remindersample.models.Event"/>
+    </data>
+    <RelativeLayout
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#000"
+                android:id="@+id/delete"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_delete"/>
+
+        <LinearLayout
+                android:layout_toLeftOf="@+id/delete"
+                android:layout_toStartOf="@+id/delete"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{obj.title}"
+                    android:textColor="#000"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{obj.desc}"
+                    android:textColor="#000"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

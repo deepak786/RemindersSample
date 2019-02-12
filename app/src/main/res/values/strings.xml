@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ReminderSample</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="time">Time</string>
+    <string name="startTimeInfo">This is the start time of the Event. Like you have an appointment at this time</string>
+    <string name="endTimeInfo">This is the end time of the Event. For e.g your appointment must end 2 hours after the
+        start.
+    </string>
+    <string name="addReminder">Want to add reminder?</string>
+    <string name="addReminderInfo">You will get the notification of the event before 30 mins of start time</string>
+    <string name="save">Save</string>
+</resources>
