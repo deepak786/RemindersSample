@@ -40,34 +40,34 @@
                 android:textColor="#636363"
                 android:text="@string/startTimeInfo"/>
 
-        <EditText
-                android:layout_marginTop="10dp"
-                android:id="@+id/endTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-                android:focusable="false"
-                android:longClickable="false"
-                android:hint="@string/time"
-                android:textColor="#000"
-                tools:ignore="Autofill"/>
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#636363"
-                android:text="@string/endTimeInfo"/>
+        <!--<EditText-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/endTime"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="none"-->
+        <!--android:focusable="false"-->
+        <!--android:longClickable="false"-->
+        <!--android:hint="@string/time"-->
+        <!--android:textColor="#000"-->
+        <!--tools:ignore="Autofill"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#636363"-->
+        <!--android:text="@string/endTimeInfo"/>-->
 
-        <CheckBox
-                android:layout_marginTop="10dp"
-                android:id="@+id/reminder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/addReminder"/>
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#636363"
-                android:text="@string/addReminderInfo"/>
+        <!--<CheckBox-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/reminder"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/addReminder"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#636363"-->
+        <!--android:text="@string/addReminderInfo"/>-->
 
         <Button
                 android:layout_marginTop="10dp"
