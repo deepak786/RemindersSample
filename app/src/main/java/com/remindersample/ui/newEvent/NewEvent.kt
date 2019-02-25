@@ -1,4 +1,4 @@
-package com.remindersample
+package com.remindersample.ui.newEvent
 
 import android.Manifest
 import android.content.ContentValues
@@ -9,6 +9,8 @@ import android.provider.CalendarContract
 import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.widget.Toast
+import com.remindersample.Constants
+import com.remindersample.R
 import com.remindersample.databinding.ActivityNewEventBinding
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.*
@@ -29,7 +31,7 @@ class NewEvent : AppCompatActivity() {
 
         // add 2 hours for end time
         endTime.add(Calendar.MINUTE, 120)
-        binding.endTime.setText(getFormattedDate(endTime))
+//        binding.endTime.setText(getFormattedDate(endTime))
 
         binding.save.setOnClickListener {
             val title: String = binding.title.text.toString().trim()
@@ -87,26 +89,6 @@ class NewEvent : AppCompatActivity() {
 
         val eventUri = contentResolver.insert(eventsUri, eventValues)
         if (eventUri != null) {
-            val eventID = eventUri.lastPathSegment
-            if (binding.reminder.isChecked) {
-                // add reminder
-
-                val remindersUri: Uri = CalendarContract.Reminders.CONTENT_URI
-
-                val reminderValues = ContentValues()
-
-                reminderValues.put(CalendarContract.Reminders.EVENT_ID, eventID)
-                reminderValues.put(
-                    CalendarContract.Reminders.MINUTES,
-                    30
-                ) // Testing with 30 mins
-                reminderValues.put(
-                    CalendarContract.Reminders.METHOD,
-                    1
-                ) // Alert Methods: Default(0), Alert(1), Email(2), SMS(3)
-
-                contentResolver.insert(remindersUri, reminderValues)
-            }
             Toast.makeText(this, "Event Added successfully", Toast.LENGTH_SHORT).show()
             finish()
         }
