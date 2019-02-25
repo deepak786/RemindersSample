@@ -11,4 +11,11 @@
     <string name="addReminder">Want to add reminder?</string>
     <string name="addReminderInfo">You will get the notification of the event before 30 mins of start time</string>
     <string name="save">Save</string>
+
+    <string name="addReminderButton">Add Reminder</string>
+    <string name="reminders">Reminders</string>
+    <string name="pressButtonForReminder">Click on the below button to add a Reminder. Each click will add single
+        reminder. Reminders are\n
+        <b>30 min, 20 min, 10 min, 5 min</b>
+    </string>
 </resources>
