@@ -6,6 +6,6 @@ class Reminder {
     var id = ""
 
     override fun toString(): String {
-        return "(${minutes} ---- ${method} ---- ${id}})"
+        return "${minutes} Minutes"
     }
 }
